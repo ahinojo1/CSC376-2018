@@ -38,7 +38,7 @@ public class ConnectionListener implements Runnable {
 				System.out.println(name + ": " + message);
 				for(DataOutputStream o : listOfClients) {
 					if(o != d_out) {
-						o.writeUTF(name + ": " + message);
+						o.writeUTF(name + " says: " + message);
 					}
 				}
 				
