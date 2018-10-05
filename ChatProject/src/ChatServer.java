@@ -15,8 +15,7 @@ public class ChatServer {
 			port = Integer.valueOf(args[0]);
 			//threaded listener for client connections
 			createListener();
-			//message relay
-			//createRelay();
+
 		}else {
 			System.err.println("Invalid use");
 		}
@@ -41,11 +40,6 @@ public class ChatServer {
 		} catch (Exception e2) {
 			System.out.println(e2.getMessage());
 		}
-	}
-	
-	public static void createRelay() {
-		
-		
 	}
 
 }
